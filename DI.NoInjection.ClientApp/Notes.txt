@@ -1,0 +1,4 @@
+The class library "DI.NoInjection.Dependents" has the reference of 
+"DI.NoInjection.Dependencies"project. 
+The "dependents" class makes use of its "dependencies" directly.
+This makes "Dependents" and "Dependencies" coupled with each other.

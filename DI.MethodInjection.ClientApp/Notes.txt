@@ -1,0 +1,4 @@
+The class library "DI.MethodInjection.Dependents" does not have any reference of "DI.MethodInjection.Dependencies"project. 
+The "dependents" class makes use of its "dependencies" classes via their interfaces.
+Dependent class exposes interfaces of dependencies (IDependency1, IDependency2 and IDependency3) as as method parameters which can be 
+assigned from outside the class (DI.PropertyInjection.ClientApp). This makes "Dependents" and "Dependencies" decoupled from each other.

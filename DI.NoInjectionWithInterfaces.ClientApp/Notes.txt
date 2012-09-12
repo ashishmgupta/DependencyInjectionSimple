@@ -1,0 +1,4 @@
+The class library "DI.NoInjectionWithInterfaces.Dependents" has the reference of 
+"DI.NoInjectionWithInterfaces.Dependencies"project. 
+The "dependents" class makes use of interfaces. However It still needs the dependent class reference.
+This makes "Dependents" and "Dependencies" coupled with each other.
