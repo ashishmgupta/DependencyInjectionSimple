@@ -1,0 +1,4 @@
+The class library "DI.ConstructorInjection.Dependents" does not have ant reference of 
+"DI.ConstructorInjection.Dependencies"project. 
+The "dependents" class makes use of its "dependencies" classes via their interfaces.
+This makes "Dependents" and "Dependencies" decoupled from each other.
