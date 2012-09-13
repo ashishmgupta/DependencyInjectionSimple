@@ -12,7 +12,7 @@ namespace DI.ConstructorInjection.Dependencies
     /// </summary>
     public class Dependency3 : IDependency3
     {
-        #region IBTest Members
+        #region IDependency3 Members
 
         /// <summary>
         /// Method of dependency class

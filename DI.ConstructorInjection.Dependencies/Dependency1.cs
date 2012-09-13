@@ -14,7 +14,7 @@ namespace DI.ConstructorInjection.Dependencies
     /// </summary>
     public class Dependency1 : IDependency1
     {
-        #region IBTest Members
+        #region IDependency1 Members
 
         /// <summary>
         /// Method of dependent class

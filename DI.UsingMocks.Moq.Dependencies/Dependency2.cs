@@ -3,20 +3,21 @@
 //     Copyright (c) R. R. Donnelley &amp; Sons Company. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
-namespace DI.ConstructorInjection.Dependencies
+namespace DI.UsingMocks.Moq.Dependencies
 {
     using System;
     using System.Linq;
-    using DI.ConstructorInjection.Interfaces;
+    using DI.UsingMocks.Moq.Interfaces;
 
     /// <summary>
-    /// Dependency class 2
+    /// TODO: Provide summary section in the documentation header.
     /// </summary>
     public class Dependency2 : IDependency2
     {
         #region IDependency2 Members
+
         /// <summary>
-        /// Dependency 2 method
+        /// Dependency 2 method which returns the type of the object
         /// </summary>
         /// <returns>Returns the type of the class</returns>
         public string Dependency2Method()

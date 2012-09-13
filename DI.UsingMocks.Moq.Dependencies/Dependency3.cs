@@ -1,25 +1,26 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Dependency2.cs" company="R. R. Donnelley &amp; Sons Company">
+// <copyright file="Dependency3.cs" company="R. R. Donnelley &amp; Sons Company">
 //     Copyright (c) R. R. Donnelley &amp; Sons Company. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
-namespace DI.ConstructorInjection.Dependencies
+namespace DI.UsingMocks.Moq.Dependencies
 {
     using System;
     using System.Linq;
-    using DI.ConstructorInjection.Interfaces;
+    using DI.UsingMocks.Moq.Interfaces;
 
     /// <summary>
-    /// Dependency class 2
+    /// TODO: Provide summary section in the documentation header.
     /// </summary>
-    public class Dependency2 : IDependency2
+    public class Dependency3 : IDependency3
     {
-        #region IDependency2 Members
+        #region IDependency3 Members
+
         /// <summary>
-        /// Dependency 2 method
+        /// Dependecy method 3
         /// </summary>
         /// <returns>Returns the type of the class</returns>
-        public string Dependency2Method()
+        public string Dependency3Method()
         {
             return this.GetType().ToString();
         }
