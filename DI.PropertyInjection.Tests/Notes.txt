@@ -1,0 +1,10 @@
+﻿We create classes (e.g. TestDependency1) created which are duplicate of the actual dependency classes (e.g. Dependency1) 
+Both actual and duplicate classes implement the same interface (IDependency1). However, in our duplicate classes, we change the implementation
+of the method (e.g. Dependency1Method()) from what implementation we have in the actual class. The implementation - which we control. 
+Remember - the goal is to NOT test the dependencies. The goal is to test the method of the dependent class which would make use of the 
+methods of dependencies.
+
+Becuase we have the same interface implemented on actual dependency class and the dupliate dependency class, 
+we can pass the duplicate dependency class in the dependent (e.g. Dependent.cs) class properties.
+
+

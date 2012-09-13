@@ -12,9 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 - Interfaces", "1 - Interfaces\1 - Interfaces.csproj", "{C72019E0-ED3C-4E43-93DE-E47095C98A44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Constructor Injection", "3 - Constructor Injection", "{839F87EB-457E-4959-932B-881F3FF9AAC5}"
-	ProjectSection(SolutionItems) = preProject
-		Notes.txt = Notes.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI.ConstructorInjection.Interfaces", "DI.ConstructorInjection.Interfaces\DI.ConstructorInjection.Interfaces.csproj", "{9DCFD785-D627-4F76-A30A-447BB09FAF72}"
 EndProject
