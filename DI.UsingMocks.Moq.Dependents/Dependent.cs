@@ -5,6 +5,9 @@
 //-----------------------------------------------------------------------
 namespace DI.UsingMocks.Moq.Dependents
 {
+    using System;
+    using System.Data;
+    using DI.UsingMocks.Moq.Dependencies;
     using DI.UsingMocks.Moq.Interfaces;
     
     /// <summary>
@@ -12,6 +15,7 @@ namespace DI.UsingMocks.Moq.Dependents
     /// </summary>
     public class Dependent
     {
+        /// <summary>
         #region Constructors
 
         /// <summary>
@@ -69,7 +73,7 @@ namespace DI.UsingMocks.Moq.Dependents
             set;
         }
 
-        #endregion
+        #endregion    
 
         #region Constructor Injection
 
@@ -93,6 +97,22 @@ namespace DI.UsingMocks.Moq.Dependents
             return string.Format("{0} - {1} - {2}", this.IDependency1.Dependency1Method(param1, param2), this.IDependency2.Dependency2Method(), this.IDependency3.Dependency3Method());
         }
 
+        /// <summary>
+        /// The method which uses calls a dependency's method 4 times
+        /// </summary>
+        /// <param name="param1">Parameter 1</param>
+        /// <param name="param2">Parameter 2</param>
+        /// <returns>String output from the multiple calls of the dependency method</returns>
+        public string DoSomeATestWorkWithLoopWithMoq(string param1, string param2)
+        {
+            string result = string.Empty;
+            for (int index = 0; index < 4; index++)
+            {
+                result += this.IDependency1.Dependency1Method(param1, param2);    
+            }
+
+            return result;
+        }       
         #endregion
     }
 }

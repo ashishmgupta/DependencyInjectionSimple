@@ -93,7 +93,25 @@ namespace DI.UsingMocks.Moq.Tests
 
             Dependent dependent = new Dependent(mockDependency1.Object, mockDependency2.Object, mockDependency3.Object);
             string actual = dependent.DoSomeATestWorkWithMoq("[", "]");
+            mockDependency1.Verify(d1 => d1.Dependency1Method(It.IsAny<string>(), It.IsAny<string>()), Times.Once());
             Assert.AreEqual(expected, actual);
         }
+
+
+        /// <summary>
+        /// Does some A test work with loop with moq_ parameter on dependency_ test.
+        /// </summary>
+        [TestMethod]
+        public void DoSomeATestWorkWithLoopWithMoq_ParameterOnDependency_Test()
+        {
+            Mock<IDependency1> mockDependency1 = new Mock<IDependency1>();
+            Mock<IDependency2> mockDependency2 = new Mock<IDependency2>();
+            Mock<IDependency3> mockDependency3 = new Mock<IDependency3>();
+            Dependent dependent = new Dependent(mockDependency1.Object, mockDependency2.Object, mockDependency3.Object);
+            dependent.DoSomeATestWorkWithLoopWithMoq("[", "]");
+            mockDependency1.Verify(d1 => d1.Dependency1Method(It.IsAny<string>(), It.IsAny<string>()), Times.Exactly(4));
+        }
+
     }
+
 }
